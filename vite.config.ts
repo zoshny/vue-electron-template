@@ -14,7 +14,7 @@ export default defineConfig(({ command, mode }) => {
     plugins: [
       vue(),
       Components({
-        dirs: ['src/components/*'],
+        dirs: ['src/components'],
       }),
     ],
 
@@ -22,7 +22,7 @@ export default defineConfig(({ command, mode }) => {
       alias: {
         '@': path.resolve(__dirname, './src'),
       },
-      extensions: ['.js', '.jsx'],
+      extensions: ['.js'],
     },
 
     build: {
